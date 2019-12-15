@@ -1,5 +1,5 @@
 # Nike HK New Product
 
-Monitor Nike HK Website and post it to your discord using python
+Monitor Nike HK for new item from all item and special item.
 
 <img src='example.png'>
