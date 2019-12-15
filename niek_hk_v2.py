@@ -9,7 +9,9 @@ headers = {
     'Referer':'https://www.nike.com.hk/'
     }
 
-
+#hello test
+def hello():
+    print(hello)
 def post_discord(sku,link):
     image = 'https://img.nike.com.hk/resources/product/%s/%s_BL1.png'% (sku,sku)
     hook = Webhook('')
