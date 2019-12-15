@@ -1,5 +1,5 @@
 import time
-from doohks import *
+from dhooks import *
 import requests
 from datetime import datetime
 from bs4 import BeautifulSoup
@@ -64,7 +64,8 @@ def main(start_item):
         difference = set(new_data) - set(old_data)
         if difference:
             for i in difference:
-                print(difference)
+                message = i.split(' - ')
+                post_discord(message[0],message[1])
                 old_data = new_data
         else:
             print(str(datetime.now())+ ' Monitroing [NIke-HK] ------- ------ ----- ----')
