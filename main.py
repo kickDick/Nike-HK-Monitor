@@ -90,7 +90,7 @@ def main(start_item):
                 time.sleep(5)
         else:
             error_message('Error with one site, items list less than 60 ')
-
+#Using this two url
 url_list = ['https://www.nike.com.hk/special_editions/list.htm?order=onShelvesTime_desc','https://www.nike.com.hk/man/all/list.htm?order=onShelvesTime_desc']
 new_data = []
 old_data = []
