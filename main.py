@@ -44,6 +44,7 @@ def error_message(message):
 
 
 def parse_html():
+    new_data = []
     for url in url_list:
         response = requests.get(url,headers=headers)
         if response.status_code == 200:
@@ -86,13 +87,11 @@ def main(start_item):
                     old_data = new_data
             else:
                 print(str(datetime.now())+ ' Monitroing [NIke-HK] ------- ------ ----- ----')
-                old_data = new_data
                 time.sleep(5)
         else:
             error_message('Error with one site, items list less than 60 ')
 #Using this two url
 url_list = ['https://www.nike.com.hk/special_editions/list.htm?order=onShelvesTime_desc','https://www.nike.com.hk/man/all/list.htm?order=onShelvesTime_desc']
-new_data = []
 old_data = []
 
 if __name__ == "__main__":
